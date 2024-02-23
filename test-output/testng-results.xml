@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-23T11:07:13Z" name="Default suite" finished-at="2024-02-23T11:07:16Z" duration-ms="3442">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.Runner@5c80cf32]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-02-23T11:07:13Z" name="Default test" finished-at="2024-02-23T11:07:16Z" duration-ms="3442">
+      <class name="testRunner.Runner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:testRunner.Runner@5c80cf32]" started-at="2024-02-23T11:07:13Z" name="setUpClass" finished-at="2024-02-23T11:07:13Z" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.Runner@5c80cf32]" started-at="2024-02-23T11:07:13Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-23T11:07:15Z" duration-ms="2197" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login should be success"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BookCart Application tests"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DDC5-LX-13372LF', ip: '172.16.2.167', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: GetHandleVerifier [0x00007FF60F004C82+3505170]
+(No symbol) [0x00007FF60EC30852]
+(No symbol) [0x00007FF60EAE4145]
+(No symbol) [0x00007FF60EB14821]
+(No symbol) [0x00007FF60EB107D4]
+(No symbol) [0x00007FF60EB55B5F]
+(No symbol) [0x00007FF60EB556C0]
+(No symbol) [0x00007FF60EB4BC33]
+(No symbol) [0x00007FF60EB1D618]
+(No symbol) [0x00007FF60EB1E6B1]
+GetHandleVerifier [0x00007FF60F0367DD+3708781]
+GetHandleVerifier [0x00007FF60F08FC5D+4074477]
+GetHandleVerifier [0x00007FF60F087DDF+4042095]
+GetHandleVerifier [0x00007FF60ED5A136+708806]
+(No symbol) [0x00007FF60EC3CB0F]
+(No symbol) [0x00007FF60EC37D14]
+(No symbol) [0x00007FF60EC37E6C]
+(No symbol) [0x00007FF60EC279A4]
+BaseThreadInitThunk [0x00007FFADF6753E0+16]
+RtlUserThreadStart [0x00007FFADFCA485B+43]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DDC5-LX-13372LF', ip: '172.16.2.167', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: GetHandleVerifier [0x00007FF60F004C82+3505170]
+(No symbol) [0x00007FF60EC30852]
+(No symbol) [0x00007FF60EAE4145]
+(No symbol) [0x00007FF60EB14821]
+(No symbol) [0x00007FF60EB107D4]
+(No symbol) [0x00007FF60EB55B5F]
+(No symbol) [0x00007FF60EB556C0]
+(No symbol) [0x00007FF60EB4BC33]
+(No symbol) [0x00007FF60EB1D618]
+(No symbol) [0x00007FF60EB1E6B1]
+GetHandleVerifier [0x00007FF60F0367DD+3708781]
+GetHandleVerifier [0x00007FF60F08FC5D+4074477]
+GetHandleVerifier [0x00007FF60F087DDF+4042095]
+GetHandleVerifier [0x00007FF60ED5A136+708806]
+(No symbol) [0x00007FF60EC3CB0F]
+(No symbol) [0x00007FF60EC37D14]
+(No symbol) [0x00007FF60EC37E6C]
+(No symbol) [0x00007FF60EC279A4]
+BaseThreadInitThunk [0x00007FFADF6753E0+16]
+RtlUserThreadStart [0x00007FFADFCA485B+43]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at steps.LoginSteps.userNavigatesToTheBookcartApplication(LoginSteps.java:29)
+at ✽.User navigates to the Bookcart Application(src\test\java\features\login.feature:3)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.Runner@5c80cf32]" started-at="2024-02-23T11:07:15Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-23T11:07:16Z" duration-ms="1050" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BookCart Application tests"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DDC5-LX-13372LF', ip: '172.16.2.167', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: GetHandleVerifier [0x00007FF60F004C82+3505170]
+(No symbol) [0x00007FF60EC30852]
+(No symbol) [0x00007FF60EAE4145]
+(No symbol) [0x00007FF60EB14821]
+(No symbol) [0x00007FF60EB107D4]
+(No symbol) [0x00007FF60EB55B5F]
+(No symbol) [0x00007FF60EB556C0]
+(No symbol) [0x00007FF60EB4BC33]
+(No symbol) [0x00007FF60EB1D618]
+(No symbol) [0x00007FF60EB1E6B1]
+GetHandleVerifier [0x00007FF60F0367DD+3708781]
+GetHandleVerifier [0x00007FF60F08FC5D+4074477]
+GetHandleVerifier [0x00007FF60F087DDF+4042095]
+GetHandleVerifier [0x00007FF60ED5A136+708806]
+(No symbol) [0x00007FF60EC3CB0F]
+(No symbol) [0x00007FF60EC37D14]
+(No symbol) [0x00007FF60EC37E6C]
+(No symbol) [0x00007FF60EC279A4]
+BaseThreadInitThunk [0x00007FFADF6753E0+16]
+RtlUserThreadStart [0x00007FFADFCA485B+43]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DDC5-LX-13372LF', ip: '172.16.2.167', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: GetHandleVerifier [0x00007FF60F004C82+3505170]
+(No symbol) [0x00007FF60EC30852]
+(No symbol) [0x00007FF60EAE4145]
+(No symbol) [0x00007FF60EB14821]
+(No symbol) [0x00007FF60EB107D4]
+(No symbol) [0x00007FF60EB55B5F]
+(No symbol) [0x00007FF60EB556C0]
+(No symbol) [0x00007FF60EB4BC33]
+(No symbol) [0x00007FF60EB1D618]
+(No symbol) [0x00007FF60EB1E6B1]
+GetHandleVerifier [0x00007FF60F0367DD+3708781]
+GetHandleVerifier [0x00007FF60F08FC5D+4074477]
+GetHandleVerifier [0x00007FF60F087DDF+4042095]
+GetHandleVerifier [0x00007FF60ED5A136+708806]
+(No symbol) [0x00007FF60EC3CB0F]
+(No symbol) [0x00007FF60EC37D14]
+(No symbol) [0x00007FF60EC37E6C]
+(No symbol) [0x00007FF60EC279A4]
+BaseThreadInitThunk [0x00007FFADF6753E0+16]
+RtlUserThreadStart [0x00007FFADFCA485B+43]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at steps.LoginSteps.userNavigatesToTheBookcartApplication(LoginSteps.java:29)
+at ✽.User navigates to the Bookcart Application(src\test\java\features\login.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.Runner@5c80cf32]" started-at="2024-02-23T11:07:16Z" name="tearDownClass" finished-at="2024-02-23T11:07:16Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
